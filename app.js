@@ -1,3 +1,4 @@
+
 //Select DOM
 const todoInput = document.querySelector(".todo-input");
 const todoButton = document.querySelector(".todo-button");
@@ -139,3 +140,6 @@ function getTodos() {
     todoList.appendChild(todoDiv);
   });
 }
+
+
+
