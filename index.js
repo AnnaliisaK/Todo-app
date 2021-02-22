@@ -10,7 +10,7 @@ app.use(bodyParser.urlencoded({ extended: false }))
 app.use(bodyParser.json())
 
 app.get('/', (req, res) => {
-  res.send('Hakkama said! Mongolid projekti server töötab!')
+  res.send('Hakkama said! Syerver töötab!')
 })
 
 app.use('/api', router)
