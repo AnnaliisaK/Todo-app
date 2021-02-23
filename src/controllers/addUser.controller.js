@@ -1,4 +1,4 @@
-const db = require('./../db')
+const db = require('../src/db')
 const Users = db.Users
 
 module.exports = async function (req, res) {

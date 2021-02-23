@@ -8,7 +8,7 @@ const {
     updateUser,
     deleteOneUserById
   
-} = require('./controllers');
+} = require('../controllers');
 
 
 router.post('/users', addUser);
