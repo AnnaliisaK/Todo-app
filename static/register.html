@@ -4,13 +4,27 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Document</title>
+		<link
+     	  href="https://fonts.googleapis.com/css?family=Poppins&display=swap"
+      	  rel="stylesheet"
+    	/>
+		<link
+      	 rel="stylesheet"
+     	 href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"
+     	 integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk="
+     	 crossorigin="anonymous"
+   		 />
+    	<link rel="stylesheet" href="./style.css" />
 	</head>
 	<body>
-		<h1>Registration</h1>
+		<header>
+			<h1>Registration</h1>
+		</header>
+		
 		<form id="reg-form">
-			<input type="text" autocomplete="off" id="username" placeholder="Username" />
-			<input type="password" autocomplete="off" id="password" placeholder="Password" />
-			<input type="submit" value="Submit Form" />
+			<input class="username" type="text" autocomplete="off" id="username" placeholder="Username" />
+			<input class="password" type="password" autocomplete="off" id="password" placeholder="Password" />
+			<input class="submit" type="submit" value="Submit Form" />
 		</form>
 
 		<script>
@@ -34,8 +48,9 @@
 				}).then((res) => res.json())
 
 				if (result.status === 'ok') {
-					// everythign went fine
-					alert('Success')
+					// everything went fine
+					window.location.href = "http://localhost:3000/login.html"
+					//alert('Success')
 				} else {
 					alert(result.error)
 				}

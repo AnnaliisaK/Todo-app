@@ -1,5 +1,6 @@
-const express = require('express')
-const router = express.Router()
+const express = require('express');
+const router = express.Router();
+// const verifyToken = require('../middleware/verifyToken');
 
 const { 
     
@@ -8,13 +9,13 @@ const {
     updateUser,
     deleteOneUserById
   
-} = require('../controllers');
+} = require('./controllers');
 
 
 router.post('/users', addUser);
 router.get('/users', getAllUsers);
 router.patch('/users/:id', updateUser);
-router.delete('/users/:id', deleteOneUserById)
+router.delete('/users/:id', deleteOneUserById);
 
 
 module.exports = router;

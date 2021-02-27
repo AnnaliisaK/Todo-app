@@ -4,13 +4,26 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Login</title>
+		<link
+     	  href="https://fonts.googleapis.com/css?family=Poppins&display=swap"
+      	  rel="stylesheet"
+    	/>
+		<link
+      	 rel="stylesheet"
+     	 href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"
+     	 integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk="
+     	 crossorigin="anonymous"
+   		 />
+    	<link rel="stylesheet" href="./style.css" />
 	</head>
 	<body>
-		<h1>Login</h1>
-		<form id="login">
-			<input type="text" autocomplete="off" id="username" placeholder="Username" />
-			<input type="password" autocomplete="off" id="password" placeholder="Password" />
-			<input type="submit" value="Submit Form" />
+		<header>
+			<h1>Login</h1>
+		</header>
+		<form  id="login">
+			<input class="username"  type="text" autocomplete="off" id="username" placeholder="Username" />
+			<input class="password" type="password" autocomplete="off" id="password" placeholder="Password" />
+			<input class="submit" type="submit" value="Submit Form" />
 		</form>
 
 		<script>
@@ -37,7 +50,8 @@
 					// everythign went fine
 					console.log('Got the token: ', result.data)
 					localStorage.setItem('token', result.data)
-					alert('Success')
+					window.location.href = "http://localhost:3000/index.html"
+					//alert('Success')
 				} else {
 					alert(result.error)
 				}
