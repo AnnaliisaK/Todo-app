@@ -184,7 +184,7 @@ form button:hover {
     flex: 1;
   }
 
-  .btn {
+  .btn-primary {
     margin: 0.5rem;
     background: rgb(104, 130, 177));
     font-size: 1,3rem;
