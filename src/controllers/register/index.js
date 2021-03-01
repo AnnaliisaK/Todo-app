@@ -22,7 +22,7 @@ const registerUser = async (req, res) => {
   } catch (e) {
     console.log(e.message);
     const error =
-      e.code === 'SQLITE_CONSTRAINT' ? 'Given e-mail address and/or username is already taken!' : 'Server error!';
+      e.code === 'MONGOOSE_CONSTRAINT' ? 'Given e-mail address and/or username is already taken!' : 'Server error!';
 
     res.render('register', {
       firstname,

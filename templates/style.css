@@ -184,13 +184,14 @@ form button:hover {
     flex: 1;
   }
 
-  .btn-primary {
+  .register {
     margin: 0.5rem;
-    background: rgb(104, 130, 177));
-    font-size: 1,3rem;
+    background-image: linear-gradient(120deg, #95bcf0, #1355aa);
+    font-size: 1.5rem;
     color: rgba(10, 6, 1, 0.849);
     display: flex;
     justify-content: space-between;
     align-items: center;
     transition: all 1s ease;
+    float: left;
   }

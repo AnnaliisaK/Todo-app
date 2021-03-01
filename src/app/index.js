@@ -17,7 +17,7 @@ const createApp = () => {
   app.use(express.static(path.join(__dirname, '..', '..', 'public')));
 
   // View engine config
-  app.set('view engine', 'ejs');
+  app.set('view engine', 'html');
   app.set('views', path.join(__dirname, '..', '..', 'templates'));
 
   // Router
