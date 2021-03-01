@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>TodoList</title>
-    <a href="login.ejs" class="btn">Logout</a>
+   
     <link
       href="https://fonts.googleapis.com/css?family=Poppins&display=swap"
       rel="stylesheet"
@@ -15,11 +15,18 @@
       integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk="
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
+    <div class="btn">
+      <div class="text-center">
+        <a href="/register.html" onclick="logout()">Log out</a>
+      </div>
+  </div>
     <header>
+      
       <h1>Annaliisa's Todo List</h1>
+     
     </header>
     <form>
       <input type="text" class="todo-input" />
@@ -51,6 +58,6 @@
       <ul class="todo-list"></ul>
     </div>
     
-    <script src="./index.js"></script>
+    <script src="/public/js/index.js"></script>
   </body>
 </html>

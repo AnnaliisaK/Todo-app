@@ -141,5 +141,20 @@ function getTodos() {
   });
 }
 
+async function logout() {
+  const result = await fetch('/api/logout', {
+      method: 'POST',
+      headers: {
+          'Content-Type': 'application/json'
+      }
+  }).then((res) => res.json())
 
+  if (result.status === 'ok') {        
+      window.location.href = "/"
+      
+  } else {
+      alert(result.error)
+      window.location.href = "/"
+  }
+}
 
